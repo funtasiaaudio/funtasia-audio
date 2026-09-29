@@ -1,5 +1,5 @@
 <!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Nyan StudioはASIO、ソフトウェアモニタリング、モニターリバーブ、リージョン編集、ループ、Stem書き出しに対応したWindows向けボーカル録音アプリです。"><title>Nyan Studio 日本語 | FUNtasia Audio</title><link rel="stylesheet" href="../nyan-studio.css"></head><body>
-<header class="nyan-header"><a class="brand" href="../../">FUNtasia <span>Audio</span></a><nav class="nav"><a href="#features">機能</a><a href="#download">ダウンロード</a><a class="lang" href="../">English</a></nav></header>
+<header class="nyan-header"><a class="brand" href="../../">FUNtasia <span>Audio</span></a><nav class="nav"><a href="#features">機能</a><a href="#faq">Q&amp;A</a><a href="#download">ダウンロード</a><a class="lang" href="../">English</a></nav></header>
 <main><section class="hero"><img src="../../Nyan%20Studio%20Image/header.png" alt="Nyan Studio"></section>
 <section class="intro"><p class="eyebrow">Standalone Recording Studio</p><h1>伴奏を入れる。歌う。<br>整える。書き出す。</h1><p class="lead">Nyan Studioは、歌録りの流れに集中したWindows向けマルチトラック録音アプリです。録音、リージョン編集、ループ、モニターリバーブ、Stem書き出しまでをひとつの画面で扱えます。</p><div class="actions"><a class="button primary" href="https://github.com/funtasiaaudio/nyan-studio/releases/download/V1.1.0/Nyan.Studio.1.1.0.zip">v1.1.0をダウンロード</a><a class="button" href="../">English</a></div><p class="meta">FREE · WINDOWS · ASIO SUPPORT · STANDALONE APPLICATION · v1.1.0</p></section>
 
@@ -20,6 +20,25 @@
 <section class="section"><p class="eyebrow">Version 1.1.0</p><h2>歌録りワークフローを大きくアップデート。</h2><p class="copy">Version 1.1.0では、ASIO、ソフトウェアモニタリング、モニター専用リバーブ、Backing Region移動、RulerからのLoop作成、Glue編集、Track / Master Meter、ボーカルStem Export、複数拍子、アイコン中心の新しいUIを追加しました。</p></section>
 
 <section class="section"><div class="splash-grid"><img src="../../Nyan%20Studio%20Image/splash.png" alt="Nyan Studio 起動画面"><div><p class="eyebrow">A Brighter Corner of FUNtasia</p><h2>起動した瞬間から、軽やかな録音空間へ。</h2><p class="copy">若葉色を基調にしたNyan Studio独自の世界観。FUNtasia Audioの一員でありながら、録音を気軽に始められる小さなスタジオとしてデザインされています。</p></div></div></section>
+
+
+<section class="section faq" id="faq"><p class="eyebrow">Q&amp;A</p><h2>使い始める前によくある質問。</h2><p class="copy">Nyan Studioでできること、モニタリング、書き出しについて、よくある質問をまとめました。</p><div class="faq-list">
+<details><summary>Nyan StudioはDAWですか？</summary><p>フル機能の音楽制作DAWではなく、ボーカル録音、シンプルなリージョン編集、モニタリング、ループ、書き出しに集中したスタンドアロン・アプリです。</p></details>
+<details><summary>Nyan Studioは無料ですか？</summary><p>はい。Windows向けに無料でダウンロードして使用できます。</p></details>
+<details><summary>ASIOに対応していますか？</summary><p>はい。Nyan StudioはWindowsのASIOオーディオデバイスに対応しています。AUDIO SETTINGSから使用するASIOデバイスを選択できます。</p></details>
+<details><summary>USBマイクでも使えますか？</summary><p>Windowsでオーディオ入力デバイスとして認識されていれば使用できます。Nyan Studio経由で自分の声を返したい場合はSoftware Monitoringも利用できます。</p></details>
+<details><summary>Monitor Reverbは録音にも入りますか？</summary><p>入りません。Monitor Reverbはモニター経路だけにかかり、録音されるボーカルはDryのままです。</p></details>
+<details><summary>モニター中に声が二重に聞こえるのはなぜですか？</summary><p>オーディオ機器側のDirect MonitoringとNyan StudioのSoftware Monitoringが同時に有効になっている可能性があります。二重に聞こえる、短いエコーのように感じる場合は、どちらか一方をOFFにしてください。Software Monitoring使用時はヘッドホンを推奨します。</p></details>
+<details><summary>何トラック使えますか？</summary><p>Backing Trackは最大8本、Vocal Trackも最大8本まで使用できます。</p></details>
+<details><summary>Backing Trackはタイムライン上で動かせますか？</summary><p>はい。BackingもRegionとして扱われ、ドラッグしてタイムライン上の開始位置を変更できます。</p></details>
+<details><summary>ボーカルはどこまで編集できますか？</summary><p>Regionの移動、上半分からのSplit、Marquee範囲選択、選択RegionのGlue、Delete、Undo / Redoなどに対応しています。</p></details>
+<details><summary>ループ再生できますか？</summary><p>はい。Ruler上をドラッグしてLoop Rangeを作り、RepeatをONにすると繰り返し再生できます。Backing Regionをダブルクリックして、その範囲をLoopにすることもできます。</p></details>
+<details><summary>対応している拍子は？</summary><p>3/4、4/4、6/8に対応しています。</p></details>
+<details><summary>ボーカルStemを書き出せますか？</summary><p>はい。Vocal Stem Exportで、現在のExport Rangeとオーディオ形式設定を使い、ボーカルトラックを個別に書き出せます。</p></details>
+<details><summary>対応している書き出し形式は？</summary><p>WAV / FLAC / AIFF、44.1 / 48 kHzに対応しています。WAVは16-bit / 24-bit / 32-bit floatを選択できます。</p></details>
+<details><summary>セッションを保存して後から開けますか？</summary><p>はい。.nyanstudio形式でSessionを保存し、後から続きを開けます。</p></details>
+<details><summary>VST / VST3プラグインは読み込めますか？</summary><p>現在は対応していません。Nyan Studioは内蔵の録音、編集、モニタリング、書き出しワークフローに集中しています。</p></details>
+</div></section>
 
 <section class="section download" id="download"><p class="eyebrow">Download</p><h2>Nyan Studio 1.1.0</h2><p class="lead">Windows向け・無料。現在のリリースをGitHubからダウンロードできます。</p><div class="actions"><a class="button primary" href="https://github.com/funtasiaaudio/nyan-studio/releases/download/V1.1.0/Nyan.Studio.1.1.0.zip">NYAN STUDIOをダウンロード</a><a class="button" href="https://github.com/funtasiaaudio/nyan-studio/releases/tag/V1.1.0">リリースページ</a><a class="button" href="../manual/Nyan_Studio_Manual_v1.1.0_JA.pdf">日本語マニュアル PDF</a><a class="button" href="../manual/Nyan_Studio_Manual_v1.1.0_EN.pdf">ENGLISH MANUAL PDF</a></div></section></main>
 <footer><div>FUNtasia Audio · Nyan Studio</div><p>Designed for digital. Built for music. · © 2026 FUNtasia Audio</p></footer></body></html>
