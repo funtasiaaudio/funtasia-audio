@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://funtasiaaudio.github.io/funtasia-audio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/ja/"/>
+  </url>
+  <url>
+    <loc>https://funtasiaaudio.github.io/funtasia-audio/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/ja/"/>
   </url>
 </urlset>
