@@ -37,10 +37,32 @@
     <loc>https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
   </url>
   <url>
     <loc>https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ja/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
+  </url>
+  <url>
+    <loc>https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
+  </url>
+  <url>
+    <loc>https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/zh-tw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://funtasiaaudio.github.io/funtasia-audio/nyan-studio/"/>
   </url>
 </urlset>
