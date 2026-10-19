@@ -13,8 +13,8 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
 // If the release has no unambiguous Windows plugin ZIP, keep the Releases link.
 const funKickButtons = document.querySelectorAll('[data-fun-kick-download]');
 if (funKickButtons.length) {
-  const releasePage = 'https://github.com/funtasiaaudio/FUN-Kick/releases/latest';
-  const releaseApi = 'https://api.github.com/repos/funtasiaaudio/FUN-Kick/releases/latest';
+  const releasePage = 'https://github.com/funtasiaaudio/FUN-Kick/releases/tag/V1.0.1';
+  const releaseApi = 'https://api.github.com/repos/funtasiaaudio/FUN-Kick/releases/tags/V1.0.1';
   const scoreAsset = (name) =>
     (/windows|win64|win_x64|win-x64|win\.zip/i.test(name) ? 4 : 0) +
     (/x64|64bit|64-bit/i.test(name) ? 2 : 0) +
@@ -26,6 +26,8 @@ if (funKickButtons.length) {
     if (!response.ok) throw new Error('FUN Kick release is unavailable');
     return response.json();
   }).then(release => {
+    // Never serve a plugin ZIP belonging to a different version.
+    if (String(release.tag_name || '').toLowerCase() !== 'v1.0.1') return null;
     const zipAssets = (release.assets || []).filter(asset =>
       asset.state === 'uploaded' &&
       /\.zip$/i.test(asset.name || '') &&
