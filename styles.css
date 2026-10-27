@@ -55,3 +55,14 @@
 .support-note-closing{font-size:clamp(21px,2.35vw,28px);line-height:1.65;letter-spacing:.01em}
 .support-note-signature{max-width:780px;margin:42px 0 0 auto;color:var(--accent);font-family:Arial,sans-serif;font-size:12px;letter-spacing:.16em}
 @media(max-width:760px){.support-note-copy,.support-note-afterword,.support-note-callout{font-size:17px;line-height:1.85}.support-note-copy{margin-top:32px}.support-note-callout{padding-left:20px;margin-top:40px}.support-note-afterword{margin-top:42px}}
+
+
+/* FUNtasia card artwork: auto-upgrade after asset upload */
+.card-art-link{display:block;cursor:zoom-in;background:#10201d}
+.product-card img.card-art-active{display:block;width:100%;height:clamp(210px,33vw,460px);object-fit:contain;object-position:center;background:#10201d;border-bottom:1px solid rgba(232,225,206,.18);padding:12px}
+.product-promo-art{background:#10201d;padding:12px 12px 8px;border-bottom:1px solid rgba(232,225,206,.18)}
+.product-promo-art>img{width:100%;height:clamp(210px,33vw,460px);object-fit:contain;display:block}
+.original-gui-links{display:flex;gap:8px 16px;align-items:center;justify-content:center;flex-wrap:wrap;margin:0;padding:9px 12px 2px;color:var(--muted);font:11px/1.4 Arial,sans-serif}
+.original-gui-links a{text-decoration:underline;text-underline-offset:3px;opacity:.85}
+.original-gui-links a:hover{opacity:1}
+@media(max-width:760px){.product-card img.card-art-active,.product-promo-art>img{height:auto;max-height:290px}.product-promo-art{padding:7px}.original-gui-links{font-size:10px}}

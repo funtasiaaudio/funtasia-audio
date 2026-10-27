@@ -58,3 +58,83 @@ if (funKickButtons.length) {
     });
   });
 }
+
+
+
+// Promotional card images are loaded only when the corresponding WebP exists.
+// Until uploaded, the original GUI screenshots remain visible (non-destructive fallback).
+(() => {
+  const scriptTag = [...document.scripts].find(s => /(?:^|\/)script\.js(?:\?.*)?$/.test(s.src));
+  const baseUrl = scriptTag ? scriptTag.src : document.baseURI;
+  const captions = {ja:"元のGUI",ko:"원본 GUI", "zh-tw":"실제 UI",en:"Original GUI"};
+  const lang = String(document.documentElement.lang || "en").toLowerCase();
+  const caption = lang.startsWith("ja") ? captions.ja : lang.startsWith("ko") ? captions.ko : lang.startsWith("zh") ? "原始 GUI" : captions.en;
+  function activate(card,src){
+    const direct = card.querySelector("img.product-shot");
+    if(direct){
+      const old=direct.getAttribute("src");
+      const link=document.createElement("a");
+      link.className="card-art-link";
+      link.href=new URL(old,document.baseURI).href;
+      link.target="_blank";
+      link.rel="noopener noreferrer";
+      link.setAttribute("aria-label",caption+": "+(direct.alt || ""));
+      direct.parentNode.insertBefore(link,direct);
+      link.appendChild(direct);
+      direct.src=src;
+      direct.alt=(card.dataset.cardLabel || "FUNtasia Audio")+" promotional artwork";
+      direct.classList.add("card-art-active");
+      return;
+    }
+    const gallery=card.querySelector(".dynamics-gallery,.filter-pack-gallery");
+    if(!gallery)return;
+    const hero=document.createElement("div");
+    hero.className="product-promo-art";
+    const picture=document.createElement("img");
+    picture.src=src;
+    picture.alt=(card.dataset.cardLabel || "FUNtasia Audio")+" promotional artwork";
+    picture.loading="lazy";
+    picture.decoding="async";
+    hero.appendChild(picture);
+    const links=document.createElement("div");
+    links.className="original-gui-links";
+    const heading=document.createElement("span");
+    heading.textContent=caption+":";
+    links.appendChild(heading);
+    gallery.querySelectorAll("figure").forEach(figure=>{
+      const original=figure.querySelector("img");
+      if(!original)return;
+      const a=figure.querySelector("a[href]");
+      const href=a?a.getAttribute("href"):original.getAttribute("src");
+      const anchor=document.createElement("a");
+      anchor.href=new URL(href,document.baseURI).href;
+      anchor.target="_blank";anchor.rel="noopener noreferrer";
+      const figcaption=figure.querySelector("figcaption");
+      anchor.textContent=(figcaption?figcaption.textContent:original.alt).trim();
+      links.appendChild(anchor);
+    });
+    hero.appendChild(links);
+    gallery.parentNode.insertBefore(hero,gallery);
+    gallery.style.display="none";
+  }
+  function testCard(card){
+    const file=card.dataset.cardArt;
+    if(!/^card-fun-[a-z0-9-]+\.webp$/.test(file || ""))return;
+    const src=new URL(file,baseUrl).href;
+    const probe=new Image();
+    probe.onload=()=>activate(card,src);
+    probe.onerror=()=>{}; // Never replace a working original with a missing asset.
+    probe.src=src;
+  }
+  function start(){
+    const cards=[...document.querySelectorAll("article[data-card-art]")];
+    if("IntersectionObserver" in window){
+      const observer=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{if(entry.isIntersecting){observer.unobserve(entry.target);testCard(entry.target);}});
+      },{rootMargin:"900px"});
+      cards.forEach(card=>observer.observe(card));
+    }else cards.forEach(testCard);
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
+  else start();
+})();
