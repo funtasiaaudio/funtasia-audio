@@ -85,3 +85,9 @@
 .filter-pack-manual-links span{font-weight:700;letter-spacing:.08em}
 .filter-pack-manual-links a{display:inline-block;margin-left:8px;color:#b7d9c4;text-decoration:underline;text-underline-offset:3px}
 .filter-pack-manual-links a:hover{color:#e8f0e9}
+
+/* FUN Basic Filter Pack: a single three-plugin physical product card */
+.filter-pack-featured{margin:0;padding:clamp(12px,2.4vw,28px);background:linear-gradient(135deg,#102725,#172f2b)}
+.filter-pack-featured a{display:block;cursor:zoom-in}
+.filter-pack-featured a:focus-visible{outline:2px solid #b7d9c4;outline-offset:3px}
+.filter-pack-featured img{display:block;width:100%;height:auto;border:1px solid rgba(184,207,189,.25);background:#112b2c}
