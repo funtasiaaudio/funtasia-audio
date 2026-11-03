@@ -108,3 +108,35 @@
   object-fit: contain;
   margin-inline: auto;
 }
+
+
+/* FUNtasia Player v1.2.1: seven theme icons in one horizontal row. */
+.player-theme-gallery{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  gap:clamp(7px,1.2vw,16px);
+  padding:clamp(18px,3.5vw,36px);
+  background:radial-gradient(ellipse at 50% 0%,rgba(90,130,120,.18),transparent 70%),linear-gradient(135deg,#112524,#1b302e);
+  border-bottom:1px solid rgba(232,225,206,.18);
+}
+.player-theme-gallery .player-theme-variant{min-width:0;margin:0;text-align:center}
+.player-theme-gallery .player-theme-variant img{
+  display:block;
+  width:100%;
+  max-width:145px;
+  height:auto;
+  margin:0 auto;
+  aspect-ratio:1;
+  object-fit:contain;
+  filter:drop-shadow(0 6px 12px rgba(0,0,0,.18));
+}
+.player-theme-gallery .player-theme-variant figcaption{
+  margin-top:9px;
+  font:11px/1.4 Arial,sans-serif;
+  letter-spacing:.025em;
+  color:#d3ded8;
+}
+@media(max-width:560px){
+  .player-theme-gallery{gap:5px;padding:14px 8px}
+  .player-theme-gallery .player-theme-variant figcaption{margin-top:5px;font-size:8px;letter-spacing:0}
+}
