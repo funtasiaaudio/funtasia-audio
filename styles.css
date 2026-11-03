@@ -141,55 +141,46 @@
   .player-theme-gallery .player-theme-variant figcaption{margin-top:5px;font-size:8px;letter-spacing:0}
 }
 
-/* FUN MEQ v1.0.0: dimensional, raised product card (image remains unaltered) */
+
+/* FUN MEQ artwork: compact physical product image, matching established FUN cards */
 .fun-meq-card{
   position:relative;
-  overflow:visible;
-  isolation:isolate;
-  border-color:rgba(215,205,169,.48);
-  box-shadow:0 4px 0 #152b24,0 9px 0 #0a1715,0 24px 46px rgba(0,0,0,.36);
-}
-.meq-product-preview{
-  margin:0;
-  padding:clamp(22px,4vw,58px) clamp(18px,4.5vw,64px) 22px;
   overflow:hidden;
-  background:radial-gradient(ellipse at 50% 10%,rgba(178,159,113,.22),transparent 58%),linear-gradient(150deg,#203b32,#0d1c1a 84%);
-  border-bottom:1px solid rgba(232,225,206,.22);
+  border-color:rgba(215,205,169,.30);
+  box-shadow:0 3px 0 #152b24,0 7px 0 #0a1715,0 20px 34px rgba(0,0,0,.25);
 }
-.meq-preview-link{display:block;text-decoration:none;cursor:zoom-in}
-.meq-preview-link:focus-visible{outline:3px solid #d4ccab;outline-offset:8px}
-.meq-physical-frame{
+.meq-art-preview{
+  margin:0;
+  padding:clamp(18px,2.8vw,32px) 18px 20px;
+  overflow:hidden;
+  background:radial-gradient(ellipse at 50% 10%,rgba(178,159,113,.14),transparent 65%),linear-gradient(145deg,#152b26,#0e1f1c);
+  border-bottom:1px solid rgba(232,225,206,.18);
+}
+.meq-art-link{
   display:block;
-  position:relative;
-  border:2px solid #a99b7c;
-  border-radius:17px;
-  background:#cbbd9c;
-  box-shadow:0 2px 0 #74684f,0 5px 0 #574d3e,0 10px 0 #27352f,0 18px 24px rgba(0,0,0,.43),0 32px 52px rgba(0,0,0,.25);
-  transform:perspective(1300px) rotateX(2deg);
-  transform-origin:center 55%;
-}
-.meq-physical-frame::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  border-radius:inherit;
-  box-shadow:inset 0 0 0 1px rgba(255,247,214,.34),inset 0 8px 14px rgba(255,250,229,.12);
-}
-.meq-physical-frame .product-shot{
   width:100%;
-  height:auto;
-  display:block;
-  border:0;
-  border-radius:14px;
+  max-width:720px;
+  margin:0 auto;
+  cursor:zoom-in;
+  border:1px solid rgba(184,207,189,.25);
+  background:#182b25;
+  box-shadow:0 12px 25px rgba(0,0,0,.22);
 }
-.meq-product-preview figcaption{
-  margin:30px 0 0;
+.meq-art-link:focus-visible{outline:3px solid #d4ccab;outline-offset:5px}
+.meq-art-image{display:block;width:100%;height:auto}
+.meq-art-preview figcaption{
+  margin:16px 0 0;
   color:#b8c9bf;
   text-align:center;
-  font:11px/1.6 Arial,sans-serif;
-  letter-spacing:.035em;
+  font:11px/1.65 Arial,sans-serif;
+  letter-spacing:.025em;
 }
+.meq-art-preview figcaption a{
+  color:#b7d9c4;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.meq-art-preview figcaption a:hover{color:#e8f0e9}
 .meq-listen-callout{
   max-width:850px;
   margin:29px 0 20px;
@@ -199,17 +190,10 @@
 }
 .meq-listen-callout strong{display:block;color:var(--cream);font-size:clamp(18px,2.3vw,25px);font-weight:400}
 .meq-listen-callout p{margin:10px 0 0;line-height:1.8}
-.meq-technical-note{
-  max-width:850px;
-  font-size:13px;
-  line-height:1.75;
-  color:#afbcb5;
-}
+.meq-technical-note{max-width:850px;font-size:13px;line-height:1.75;color:#afbcb5}
 @media(max-width:760px){
-  .fun-meq-card{box-shadow:0 3px 0 #152b24,0 7px 0 #0a1715,0 15px 26px rgba(0,0,0,.3)}
-  .meq-product-preview{padding:18px 14px 12px}
-  .meq-physical-frame{border-radius:9px;transform:none;box-shadow:0 2px 0 #74684f,0 5px 0 #27352f,0 10px 18px rgba(0,0,0,.38)}
-  .meq-physical-frame .product-shot{border-radius:7px}
-  .meq-product-preview figcaption{margin:16px 0 0;font-size:10px}
+  .fun-meq-card{box-shadow:0 3px 0 #152b24,0 7px 0 #0a1715,0 15px 26px rgba(0,0,0,.22)}
+  .meq-art-preview{padding:14px 12px}
+  .meq-art-preview figcaption{font-size:10px}
   .meq-listen-callout{padding:18px}
 }
