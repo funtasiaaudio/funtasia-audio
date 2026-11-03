@@ -91,3 +91,20 @@
 .filter-pack-featured a{display:block;cursor:zoom-in}
 .filter-pack-featured a:focus-visible{outline:2px solid #b7d9c4;outline-offset:3px}
 .filter-pack-featured img{display:block;width:100%;height:auto;border:1px solid rgba(184,207,189,.25);background:#112b2c}
+
+/* Keep these three promotional panels aligned with the compact product-art presentation. */
+#funtasia-studio > .product-shot,
+#fun-test-tone > .product-shot {
+  width: min(720px, calc(100% - 32px));
+  height: auto;
+  margin: 16px auto 0;
+  border: 1px solid rgba(184,207,189,.25);
+}
+#basic-filter-pack .filter-pack-featured img {
+  width: 100%;
+  max-width: 720px;
+  max-height: 480px;
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;
+}
