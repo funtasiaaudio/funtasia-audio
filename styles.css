@@ -140,3 +140,76 @@
   .player-theme-gallery{gap:5px;padding:14px 8px}
   .player-theme-gallery .player-theme-variant figcaption{margin-top:5px;font-size:8px;letter-spacing:0}
 }
+
+/* FUN MEQ v1.0.0: dimensional, raised product card (image remains unaltered) */
+.fun-meq-card{
+  position:relative;
+  overflow:visible;
+  isolation:isolate;
+  border-color:rgba(215,205,169,.48);
+  box-shadow:0 4px 0 #152b24,0 9px 0 #0a1715,0 24px 46px rgba(0,0,0,.36);
+}
+.meq-product-preview{
+  margin:0;
+  padding:clamp(22px,4vw,58px) clamp(18px,4.5vw,64px) 22px;
+  overflow:hidden;
+  background:radial-gradient(ellipse at 50% 10%,rgba(178,159,113,.22),transparent 58%),linear-gradient(150deg,#203b32,#0d1c1a 84%);
+  border-bottom:1px solid rgba(232,225,206,.22);
+}
+.meq-preview-link{display:block;text-decoration:none;cursor:zoom-in}
+.meq-preview-link:focus-visible{outline:3px solid #d4ccab;outline-offset:8px}
+.meq-physical-frame{
+  display:block;
+  position:relative;
+  border:2px solid #a99b7c;
+  border-radius:17px;
+  background:#cbbd9c;
+  box-shadow:0 2px 0 #74684f,0 5px 0 #574d3e,0 10px 0 #27352f,0 18px 24px rgba(0,0,0,.43),0 32px 52px rgba(0,0,0,.25);
+  transform:perspective(1300px) rotateX(2deg);
+  transform-origin:center 55%;
+}
+.meq-physical-frame::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  border-radius:inherit;
+  box-shadow:inset 0 0 0 1px rgba(255,247,214,.34),inset 0 8px 14px rgba(255,250,229,.12);
+}
+.meq-physical-frame .product-shot{
+  width:100%;
+  height:auto;
+  display:block;
+  border:0;
+  border-radius:14px;
+}
+.meq-product-preview figcaption{
+  margin:30px 0 0;
+  color:#b8c9bf;
+  text-align:center;
+  font:11px/1.6 Arial,sans-serif;
+  letter-spacing:.035em;
+}
+.meq-listen-callout{
+  max-width:850px;
+  margin:29px 0 20px;
+  padding:23px 26px;
+  border-left:3px solid #bbaa7e;
+  background:linear-gradient(95deg,rgba(143,174,159,.17),rgba(143,174,159,.04));
+}
+.meq-listen-callout strong{display:block;color:var(--cream);font-size:clamp(18px,2.3vw,25px);font-weight:400}
+.meq-listen-callout p{margin:10px 0 0;line-height:1.8}
+.meq-technical-note{
+  max-width:850px;
+  font-size:13px;
+  line-height:1.75;
+  color:#afbcb5;
+}
+@media(max-width:760px){
+  .fun-meq-card{box-shadow:0 3px 0 #152b24,0 7px 0 #0a1715,0 15px 26px rgba(0,0,0,.3)}
+  .meq-product-preview{padding:18px 14px 12px}
+  .meq-physical-frame{border-radius:9px;transform:none;box-shadow:0 2px 0 #74684f,0 5px 0 #27352f,0 10px 18px rgba(0,0,0,.38)}
+  .meq-physical-frame .product-shot{border-radius:7px}
+  .meq-product-preview figcaption{margin:16px 0 0;font-size:10px}
+  .meq-listen-callout{padding:18px}
+}
