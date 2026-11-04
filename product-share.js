@@ -2,8 +2,8 @@
 (() => {
   const locale = (document.documentElement.lang || 'en').toLowerCase();
   const labels = locale.startsWith('ja') ? {share:'シェア', copy:'Instagram用URLをコピー', image:'画像を保存', copied:'コピーしました', failed:'URLを選択してコピーしてください'} :
-    locale.startsWith('ko') ? {share:'공유', copy:'Instagram용 URL 복사', image:'이미지 저장', copied:'복사됨', failed:'URL을 직접 복사하세요'} :
-    locale.startsWith('zh') ? {share:'分享', copy:'複製 Instagram 分享網址', image:'儲存圖片', copied:'已複製', failed:'請手動複製網址'} :
+    locale.startsWith('de') ? {share:'Teilen', copy:'Instagram-Link kopieren', image:'Bild speichern', copied:'Kopiert', failed:'Link manuell kopieren'} :
+    locale.startsWith('fr') ? {share:'Partager', copy:'Copier le lien Instagram', image:'Enregistrer l’image', copied:'Copié', failed:'Copiez le lien manuellement'} :
     locale.startsWith('ru') ? {share:'Поделиться', copy:'Копировать ссылку для Instagram', image:'Сохранить изображение', copied:'Скопировано', failed:'Скопируйте ссылку вручную'} :
     {share:'Share', copy:'Copy URL for Instagram', image:'Save image', copied:'Copied', failed:'Copy the URL manually'};
   const css = document.createElement('style');
