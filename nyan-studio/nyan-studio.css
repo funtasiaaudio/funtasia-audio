@@ -57,3 +57,6 @@ a{color:inherit;text-decoration:none}
 footer{padding:48px 7vw;background:#172f29;color:#dfe8d7;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}footer p{margin:0;color:#aebfae}
 @media(max-width:900px){.quick-step,.quick-step:nth-child(even){grid-template-columns:1fr}.quick-step:nth-child(even) .quick-shot,.quick-step:nth-child(even) .quick-copy{order:initial}}
 @media(max-width:760px){.nyan-header{height:60px}.nav a:not(.lang){display:none}.hero{padding-top:60px}.intro,.section{padding:68px 6vw}.lead{font-size:18px}.feature-grid{grid-template-columns:1fr}.splash-grid{grid-template-columns:1fr}.screen-wrap,.demo-video-wrap{padding:8px;border-radius:16px}.screen-wrap img,.demo-video-wrap video{border-radius:10px}.quick-step{padding:12px;border-radius:18px;gap:20px}.quick-shot{border-radius:12px}.guide-ring{border-width:3px;box-shadow:0 0 0 2px rgba(245,244,223,.94),0 4px 14px rgba(65,109,89,.20)}}
+
+/* Scrollable locale pills on narrow screens: no overlap with site brand. */
+@media(max-width:900px){.nyan-header{padding:0 12px;gap:10px}.nav{min-width:0;max-width:calc(100vw - 143px);overflow-x:auto;overscroll-behavior-x:contain;gap:8px;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a.lang{white-space:nowrap;flex-shrink:0;padding:7px 9px}.brand{flex-shrink:0}}
