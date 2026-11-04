@@ -215,3 +215,13 @@
 @media(prefers-reduced-motion:reduce){.goods-wallpaper-card{transition:none}.goods-wallpaper-card:hover{transform:none}}
 
 @media(max-width:540px){.goods-wallpaper-actions{align-items:stretch;flex-direction:column}.goods-wallpaper-actions .button{width:100%;box-sizing:border-box}}
+
+/* Keep the navigation usable when the fifth language is shown on narrower screens. */
+@media (min-width:761px) and (max-width:1440px) {
+  .site-header .menu{display:block}
+  .site-header nav{display:none;position:absolute;top:72px;left:0;right:0;background:rgba(16,26,25,.98);padding:26px 5vw;flex-direction:column;gap:20px;border-bottom:1px solid var(--line);max-height:calc(100vh - 72px);overflow-y:auto}
+  .site-header nav.open{display:flex}
+}
+@media (max-width:760px) {
+  .site-header nav{max-height:calc(100vh - 62px);overflow-y:auto}
+}
