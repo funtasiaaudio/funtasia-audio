@@ -4,6 +4,7 @@
   const labels = locale.startsWith('ja') ? {share:'シェア', copy:'Instagram用URLをコピー', image:'画像を保存', copied:'コピーしました', failed:'URLを選択してコピーしてください'} :
     locale.startsWith('ko') ? {share:'공유', copy:'Instagram용 URL 복사', image:'이미지 저장', copied:'복사됨', failed:'URL을 직접 복사하세요'} :
     locale.startsWith('zh') ? {share:'分享', copy:'複製 Instagram 分享網址', image:'儲存圖片', copied:'已複製', failed:'請手動複製網址'} :
+    locale.startsWith('ru') ? {share:'Поделиться', copy:'Копировать ссылку для Instagram', image:'Сохранить изображение', copied:'Скопировано', failed:'Скопируйте ссылку вручную'} :
     {share:'Share', copy:'Copy URL for Instagram', image:'Save image', copied:'Copied', failed:'Copy the URL manually'};
   const css = document.createElement('style');
   css.textContent = '.product-share{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:14px}.product-share-label{font-size:11px;letter-spacing:.08em;opacity:.7}.product-share a,.product-share button{font:inherit;font-size:12px;line-height:1.4;color:inherit;background:transparent;border:1px solid currentColor;border-radius:999px;padding:6px 11px;cursor:pointer;text-decoration:none;opacity:.85}.product-share a:hover,.product-share button:hover{opacity:1}.product-share :focus-visible{outline:2px solid currentColor;outline-offset:3px}.product-share-status{font-size:11px;opacity:.75}';
