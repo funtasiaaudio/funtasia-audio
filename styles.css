@@ -207,7 +207,11 @@
 .goods-wallpaper-card:hover{transform:translateY(-2px);border-color:rgba(212,210,192,.35)}
 .goods-wallpaper-card img{display:block;width:100%;height:auto;aspect-ratio:520/293;object-fit:cover;background:#172723}
 .goods-wallpaper-card h3{font-size:.95rem;font-weight:600;letter-spacing:.025em;padding:.85rem 1rem 1rem;margin:0}
+.goods-wallpaper-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin:1.5rem 0 .55rem}
+.goods-wallpaper-actions .button{display:inline-flex;align-items:center;justify-content:center;text-align:center}
 .goods-wallpaper-note{font-size:.9rem;opacity:.72;margin-top:1rem}
 @media(max-width:860px){.goods-wallpaper-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.goods-wallpaper-grid{grid-template-columns:1fr;gap:1rem}}
 @media(prefers-reduced-motion:reduce){.goods-wallpaper-card{transition:none}.goods-wallpaper-card:hover{transform:none}}
+
+@media(max-width:540px){.goods-wallpaper-actions{align-items:stretch;flex-direction:column}.goods-wallpaper-actions .button{width:100%;box-sizing:border-box}}
