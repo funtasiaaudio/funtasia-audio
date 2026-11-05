@@ -1,6 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex,follow">
+<!-- FUNtasia unified site: homepage-only redirect. Keep original files and deep links intact. -->
+<script data-funtasia-unified-redirect>
+(function () {
+  var language = "ru";
+  if (!language) {
+    var browserLanguage = (navigator.language || 'en').toLowerCase();
+    language = ['ja', 'de', 'fr', 'ru'].indexOf(browserLanguage.split('-')[0]) !== -1 ? browserLanguage.split('-')[0] : 'en';
+  }
+  var catalog = 'https://funtasiaaudio.github.io/catalog/' + language + '/';
+  var hash = location.hash.toLowerCase();
+  var routes = {
+    '#home': 'https://funtasiaaudio.github.io/',
+    '#products': catalog,
+    '#applications': 'https://funtasiaaudio.github.io/utilities/',
+    '#funtasia-mixer': 'https://funtasiaaudio.github.io/utilities/#funtasia-mixer',
+    '#funtasia-player': 'https://funtasiaaudio.github.io/utilities/#funtasia-player',
+    '#studio': 'https://funtasiaaudio.github.io/studio/',
+    '#goods': 'https://funtasiaaudio.github.io/goods/',
+    '#cursors': 'https://funtasiaaudio.github.io/goods/#cursors',
+    '#wallpapers': 'https://funtasiaaudio.github.io/goods/',
+    '#support': 'https://funtasiaaudio.github.io/support/',
+    '#about': 'https://funtasiaaudio.github.io/about/'
+  };
+  var destination = new URL(routes[hash] || catalog);
+  destination.search = location.search;
+  location.replace(destination.href);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://funtasiaaudio.github.io/catalog/ru/"></noscript>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43B7X1296"></script>
 <script>
@@ -15,7 +46,7 @@
   <meta name="description" content="Enter the world of FUNtasia Audio: imagined instruments and focused audio tools, designed for digital and built for music.">
   <title>FUNtasia Audio</title>
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
-  <link rel="canonical" href="https://funtasiaaudio.github.io/funtasia-audio/">
+  <link rel="canonical" href="https://funtasiaaudio.github.io/catalog/ru/">
   <link rel="alternate" hreflang="en" href="https://funtasiaaudio.github.io/funtasia-audio/">
   <link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/ja/">
   <link rel="alternate" hreflang="de" href="https://funtasiaaudio.github.io/funtasia-audio/de/">
