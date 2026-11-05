@@ -250,3 +250,18 @@
 .drum-pad-manual-links a{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border:1px solid rgba(143,174,159,.55);font:12px/1.3 Arial,sans-serif;letter-spacing:.035em;color:var(--cream);background:rgba(143,174,159,.09);transition:background .2s,border-color .2s}
 .drum-pad-manual-links a:hover,.drum-pad-manual-links a:focus-visible{background:rgba(143,174,159,.23);border-color:var(--accent)}
 @media(max-width:760px){.drum-pad-manual-links{gap:8px}.drum-pad-manual-links a{flex:1 1 45%;justify-content:center}}
+
+
+/* FUNtasia Mixer v1.0.0 screenshot */
+.mixer-card .product-shot{
+  width:min(420px,calc(100% - 32px));
+  max-width:100%;
+  height:auto;
+  margin:28px auto 0;
+  border:1px solid rgba(232,225,206,.18);
+  border-radius:24px;
+  box-shadow:0 18px 40px rgba(0,0,0,.22);
+}
+@media(max-width:760px){
+  .mixer-card .product-shot{width:min(340px,calc(100% - 32px));margin:22px auto 0;}
+}
