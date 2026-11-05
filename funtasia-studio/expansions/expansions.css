@@ -17,8 +17,6 @@ html[lang="ja"] .expansion-hero h1{font-size:clamp(2.6rem,5.6vw,5.2rem)}
 .pack-specs li{padding:2px 0}
 .pack-specs strong{color:#f0ebd3}
 .pack-actions{margin-top:26px}
-.button-pending{cursor:not-allowed;opacity:.59;box-shadow:none;user-select:none}
-.button-pending:hover{transform:none;background:#c7dcc0}
 .expansion-copy .pack-availability{font-size:.79rem;color:#e5d5af;margin:12px 0 0}
 .pack-footnote{margin:21px 0 0;font-size:.86rem}
 .expansion-usage{background:radial-gradient(ellipse at 90% 25%,rgba(138,163,128,.14),transparent 60%)}
