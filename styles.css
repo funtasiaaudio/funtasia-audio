@@ -228,3 +228,17 @@
 @media (max-width:760px) {
   .site-header nav{max-height:calc(100vh - 62px);overflow-y:auto}
 }
+
+
+/* FUNtasia Alchemist Cursors · desktop goods */
+.cursor-section{padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem);border-top:1px solid var(--line)}
+.cursor-section .lead{max-width:880px}
+.cursor-preview-frame{overflow:hidden;border:1px solid rgba(212,210,192,.24);border-radius:18px;background:#101b18;margin:1.9rem 0 1rem;box-shadow:0 16px 36px rgba(0,0,0,.12)}
+.cursor-preview-frame img{display:block;width:100%;height:auto;aspect-ratio:1540/480;object-fit:contain}
+.cursor-theme-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin:1rem 0 1.4rem}
+.cursor-theme-tags span{display:inline-flex;align-items:center;gap:.48rem;padding:.35rem .6rem;border:1px solid rgba(212,210,192,.18);border-radius:999px;background:rgba(255,255,255,.035);font-size:.8rem;line-height:1.3}
+.cursor-theme-tags span::before{content:"";display:inline-block;width:.68rem;height:.68rem;border-radius:50%;background:var(--cursor-swatch);box-shadow:0 0 0 1px rgba(255,255,255,.13)}
+.cursor-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin:1.25rem 0 .5rem}
+.cursor-actions .button{display:inline-flex;align-items:center;justify-content:center;text-align:center}
+.cursor-note{font-size:.9rem;opacity:.74;margin-top:.9rem}
+@media(max-width:540px){.cursor-actions{align-items:stretch;flex-direction:column}.cursor-actions .button{width:100%;box-sizing:border-box}.cursor-preview-frame{border-radius:12px}.cursor-theme-tags{gap:.4rem}}
