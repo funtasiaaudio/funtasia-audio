@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FUNtasia Studio Beta 1.1.2は、音楽制作と音楽理論を体験しながら学べる無料の学習用オーディオソフトウェア。7種類のカラーテーマ、MIDI編集、ミキサー、VST3、音楽理論ツールなどを紹介します。">
+  <meta name="description" content="FUNtasia Studio Beta 1.1.3は、音楽制作と音楽理論を体験しながら学べる無料の学習用オーディオソフトウェア。7種類のカラーテーマ、MIDI編集、ミキサー、VST3、音楽理論ツールなどを紹介します。">
   <meta name="theme-color" content="#101916">
   <title>FUNtasia Studio — 学ぶ、試す、自分の音を見つける | FUNtasia Audio</title>
   <link rel="icon" href="../../favicon.png" type="image/png">
@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="ja" href="https://funtasiaaudio.github.io/funtasia-audio/funtasia-studio/ja/">
   <link rel="alternate" hreflang="ru" href="https://funtasiaaudio.github.io/funtasia-audio/funtasia-studio/ru/">
   <link rel="alternate" hreflang="x-default" href="https://funtasiaaudio.github.io/funtasia-audio/funtasia-studio/">
-  <meta property="og:title" content="FUNtasia Studio Beta 1.1.2 — 誰もが学べる、音楽制作の場所">
+  <meta property="og:title" content="FUNtasia Studio Beta 1.1.3 — 誰もが学べる、音楽制作の場所">
   <meta property="og:description" content="若いクリエイターも、経済状況にかかわらず、等しく音楽制作を学べる無料ソフト。">
   <meta property="og:image" content="https://funtasiaaudio.github.io/funtasia-audio/funtasia-studio/assets/theme-forest.webp">
   <meta property="og:type" content="website">
@@ -37,7 +37,7 @@
           <p class="eyebrow">FUNtasia Studio / 無料・学習用オーディオソフトウェア</p>
           <h1>音楽を学ぶ。<span>自分の音を見つける。</span></h1>
           <p class="lead">音楽制作の仕組みを、見て、触れて、試しながら学ぶためのスタジオ。必要なのは好奇心。創作の方法も、学ぶ人の経済事情も、ひとつの型にはめません。</p>
-          <div class="tag-row" aria-label="リリース情報"><span class="tag">BETA 1.1.2</span><span class="tag">無料</span><span class="tag">WINDOWS</span><span class="tag">学習・試用向け</span></div>
+          <div class="tag-row" aria-label="リリース情報"><span class="tag">BETA 1.1.3</span><span class="tag">無料</span><span class="tag">WINDOWS</span><span class="tag">学習・試用向け</span></div>
           <div class="btn-row"><a class="button primary" href="#download">公開ベータ版を入手 ↗</a><a class="button" href="#experience">スタジオを見る ↓</a><a class="button" href="../expansions/ja/">無料追加コンテンツ ↗</a></div>
         </div>
         <aside class="hero-note" aria-label="私たちの思い"><div class="big">学ぶための入口は、<br>誰にでも。</div><p>若いクリエイターにも、初めて音楽を作る人にも。予算の多寡にかかわらず、自由に試せる場所を届けたい。</p></aside>
@@ -122,12 +122,14 @@
 
     <section class="section download" id="download" aria-labelledby="download-title">
       <div class="shell">
-        <p class="number">06 / 学習を始めよう</p><p class="eyebrow">Beta 1.1.2 · 2026年11月</p>
+        <p class="number">06 / 学習を始めよう</p><p class="eyebrow">Beta 1.1.3 · 2026年11月</p>
         <h2 id="download-title">あなたの学習用スタジオを。</h2>
         <div class="release-highlights" aria-label="るり式コード表記の試験導入以降のアップデート">
-          <p class="eyebrow">BETA 1.1.2までの更新ハイライト</p>
-          <h3>コードの理解から、日々のMIDI操作の改善まで。</h3>
+          <p class="eyebrow">BETA 1.1.3までの更新ハイライト</p>
+          <h3>クリップ編集とプロジェクト終了操作が、もっと使いやすく。</h3>
           <ul>
+            <li><strong>Beta 1.1.3 — クリップゲイン・フェードの修正：</strong>オーディオリージョンのマウス操作を修正し、Region Inspectorからのゲイン・フェード編集も改善しました。</li>
+            <li><strong>Beta 1.1.3 — プロジェクト終了操作：</strong>CLOSE PROJECTでプロジェクト一覧に戻れます。プロジェクトを閉じるときやアプリ終了時は「保存／保存しない／キャンセル」を確認します。</li>
             <li><strong>Beta 1.1.2 — MIDI入力の自動有効化：</strong>起動時やMIDIキーボードの電源再投入・再接続時に、入力デバイスを自動で有効化します。手動で無効化した入力の設定は保持します。</li>
             <li><strong>Beta 1.1.2 — Bounce／Undoの安全対策：</strong>完全に空のMIDIリージョンはBounce処理を開始せず、Bounce後のUndoで選択を復元する順序も改善しました。報告されたクラッシュの根本原因は未特定です。</li>
             <li><strong>るり式コード／ディグリー表記を試験導入：</strong>テンションの9→2、11→4、13→6と表し、例として <code>Cadd9 → 1^235</code>、<code>Csus2 → 1^25</code>。キー＆コードガイド、スケール／ボイシングブラウザー、ギター指板、コードトラックへ反映し、直接入力プレビューにも対応しました。</li>
@@ -141,8 +143,8 @@
           <p class="release-hint">るり式表記は試験導入段階です。Bounce／Undoの安全対策はあらゆるクラッシュの解消を保証するものではありません。本バージョンは学習・試用向けのプレリリースです。</p>
         </div>
         <div class="download-card">
-          <div><p class="version">FUNtasia Studio Beta 1.1.2</p><p>Windows向け・無料の学習用アプリケーション。配布ZIPの内容、インストール方法、注意事項はGitHubのリリースページをご確認ください。</p><div class="tag-row"><span class="tag">無料ダウンロード</span><span class="tag">日本語 / 英語マニュアル</span><span class="tag">公開ベータ版</span></div></div>
-          <div class="btn-row"><a class="button primary" href="https://github.com/funtasiaaudio/FUNtasia-Studio/releases/download/v1.1.2beta/FUNtasia.Studio.beta1.1.2.zip">BETA 1.1.2 ZIPをダウンロード ↗</a><a class="button" href="https://github.com/funtasiaaudio/FUNtasia-Studio/releases/tag/v1.1.2beta" target="_blank" rel="noopener noreferrer">リリースノート・マニュアル案内 ↗</a></div>
+          <div><p class="version">FUNtasia Studio Beta 1.1.3</p><p>Windows向け・無料の学習用アプリケーション。配布ZIPの内容、インストール方法、注意事項はGitHubのリリースページをご確認ください。</p><div class="tag-row"><span class="tag">無料ダウンロード</span><span class="tag">日本語 / 英語マニュアル</span><span class="tag">公開ベータ版</span></div></div>
+          <div class="btn-row"><a class="button primary" href="https://github.com/funtasiaaudio/FUNtasia-Studio/releases/download/v1.1.3beta/FUNtasia.Studio.beta1.1.3.zip">BETA 1.1.3 ZIPをダウンロード ↗</a><a class="button" href="https://github.com/funtasiaaudio/FUNtasia-Studio/releases/tag/v1.1.3beta" target="_blank" rel="noopener noreferrer">リリースノート・マニュアル案内 ↗</a></div>
         </div>
         <aside class="notice" aria-label="ベータ版の重要な注意事項"><p><strong>ご利用前に：</strong>本ソフトは学習・試用向けベータ版です。動作の安定性、プロジェクトの保存・読み込み、制作データの安全性は保証されません。不具合・強制終了・データ消失が発生する可能性があります。大切なデータは必ず別途バックアップし、マスタークラス教材はコピーを使ってください。個別の技術サポートは提供していません。</p><p>インストール時に表示される利用規約をご確認ください。</p></aside>
       </div>
@@ -166,6 +168,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><div><a class="wordmark" href="../../">FUNtasia <span>Audio</span></a><p>Designed for digital. Built for music.</p><small>© 2026 FUNtasia Audio · FUNtasia Studio Beta 1.1.2</small></div><div><a href="../../ja/">← FUNtasia Audio ホームへ</a></div></div></footer>
+  <footer class="footer"><div class="shell footer-inner"><div><a class="wordmark" href="../../">FUNtasia <span>Audio</span></a><p>Designed for digital. Built for music.</p><small>© 2026 FUNtasia Audio · FUNtasia Studio Beta 1.1.3</small></div><div><a href="../../ja/">← FUNtasia Audio ホームへ</a></div></div></footer>
 </body>
 </html>
